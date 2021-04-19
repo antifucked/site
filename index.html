@@ -1,0 +1,58 @@
+---
+title: antizaibatsu
+layout: default
+stylesheet: homepage
+---
+
+<div class="hp_body">
+    <div class="row about">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h1 class="zaibatsu-word" id="word">財閥</h1>
+            <h2 class="zaibatsu-pronunciation" id="pronunciation">zei·bat·soo</h2>
+            <span class="zaibatsu-simplification" id="simplification">Dynastic companies</span>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+<script>
+
+var zaibatsus = [ 
+    {
+        word: "財閥",
+        pronunciation: "zei·bat·soo",
+        simplification: "Dynastic companies"
+    }, 
+    {
+        word: "заебаться",
+        pronunciation: "zajabatsa ( zə(j)ɪˈbat͡sːə )",
+        simplification: "being fucked by it"
+    }, 
+    {
+        word: "fucked",
+        pronunciation: "fukht ( /fʌkt/ )",
+        simplification: "An overwhelming feeling of not being in control."
+    }
+]
+
+var currentIndex = 0;
+
+function switchWord ( ) {
+    if ( currentIndex < (zaibatsus.length - 1) ) {
+        currentIndex ++
+    } else {
+        currentIndex = 0
+    }
+    setWord()
+}
+
+function setWord () {
+    document.getElementById('word').innerText = zaibatsus[currentIndex].word
+    document.getElementById('pronunciation').innerText = zaibatsus[currentIndex].pronunciation
+    document.getElementById('simplification').innerText = zaibatsus[currentIndex].simplification
+}
+
+setInterval(switchWord, 3500);
+
+</script>

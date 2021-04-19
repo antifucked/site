@@ -1,0 +1,20 @@
+/* Bootstrap Tablet Trigger */ 
+/* Bootstrap collapses the nav at 992px */
+@media screen and (max-width: 992px) {
+}
+
+/* Tablet */
+@media screen and (max-width: 800px ) {
+
+.col-sm-6 {
+    padding-right: 0;
+    margin-right: -1.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 330px) {
+}
